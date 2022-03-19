@@ -77,7 +77,6 @@ function gotResult(error, results)
   drawn_sketch = results[0].label;
   document.getElementById("your_sketch").innerHTML = "Your Sketch: "+results[0].label;
   document.getElementById("confidence").innerHTML = "Confidence: "+Math.round(results[0].confidence*100)+"%";
-  var utterthis = new SpeechSynthesisUtterance(label);
-  synth.speak(utterthis);
+  
  }
 }
